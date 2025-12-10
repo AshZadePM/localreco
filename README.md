@@ -15,6 +15,7 @@ This project consists of a React frontend and a Node/Express backend.
 ## Setup
 
 1. Install dependencies for the root and workspaces:
+
    ```bash
    npm install
    ```
@@ -34,12 +35,14 @@ docker-compose up --build
 **Option 2: Manual**
 
 Terminal 1 (Backend):
+
 ```bash
 cd backend
 npm run dev
 ```
 
 Terminal 2 (Frontend):
+
 ```bash
 cd frontend
 npm run dev
