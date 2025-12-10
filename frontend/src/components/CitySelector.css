@@ -1,0 +1,64 @@
+.city-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.city-input-wrapper {
+  position: relative;
+}
+
+.city-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.city-input:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.city-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #cbd5e0;
+  border-top: none;
+  border-radius: 0 0 0.375rem 0.375rem;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.city-option {
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.city-option:hover {
+  background-color: #edf2f7;
+}
+
+.city-no-results {
+  padding: 0.75rem;
+  color: #718096;
+  text-align: center;
+}
+
+.selected-city {
+  padding: 0.5rem 0.75rem;
+  background-color: #edf2f7;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #2d3748;
+}
